@@ -1,4 +1,12 @@
-import { meaningOfLife } from "@nighttrax/foo";
+import React from 'react'
+import ReactDom from 'react-dom';
 
-// eslint-disable-next-line no-console
-console.log(meaningOfLife + 3);
+
+function App(){
+    return <>1232332</>
+}
+
+const div = document.createElement('div')
+document.body.appendChild(div)
+
+ReactDom.render(<App /> , div)
