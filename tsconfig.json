@@ -4,9 +4,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-
+      "@noplugin/*": ["packages/*/src"]
     },
-    "noEmit": true,
-    "moduleResolution":"Classic"
+    "noEmit": true
   }
 }

@@ -90,9 +90,9 @@ export function useName(name: string){
   pluginContext['name'] = name
 }
 
-export function usePluginContext(){
-  const pluginContext = curPluginContext
-  return pluginContext
+export function usePluginContext(name?: string){
+  const pluginContext = curPluginContext 
+  return name ? pluginContext : pluginContext.ctx.plugins.get(name)
 }
 
 export function useProperty(key: string, value: unknown){
@@ -101,15 +101,10 @@ export function useProperty(key: string, value: unknown){
 }
 
 
-
-function someplugin(){
-  const pluginContext = usePluginContext()
-
-  useProperty('key', 11)
-
-}
-
-
+// function someplugin(){
+//   const pluginContext = usePluginContext()
+//   useProperty('key', 11)
+// }
 
 
 
