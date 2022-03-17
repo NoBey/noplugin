@@ -7,8 +7,6 @@ import { useName,  usePluginContext } from '@noplugin/core'
 
 
 export default function (){
-   
-    const  pluginContexty =  usePluginContext()
+    const pluginContexty =  usePluginContext()
     useName('view666')
-
 }

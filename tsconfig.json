@@ -4,7 +4,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@noplugin/*": ["packages/*/src"]
+      // "@noplugin/*": ["packages/*/src"]
     },
     "noEmit": true
   }

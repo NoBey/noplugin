@@ -2,11 +2,12 @@ import React from 'react'
 import ReactDom from 'react-dom';
 
 import { create } from '@noplugin/core'
+import view from '@noplugin/view'
 
 
-
-create({
-    plugins: []
+//@ts-ignore
+window.app = create({
+    plugins: [view]
 })
 
 // function App(){

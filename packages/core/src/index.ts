@@ -75,7 +75,7 @@ export function create(options: Options){
 
   plugins.forEach(plugin => {
     const pluginContext = applyPlugin(plugin, ctx)
-    if(!(pluginContext.name = plugin[0]?.name || (plugin as { name?: string })?.name)){
+    if( !(pluginContext.name || (pluginContext.name = plugin[0]?.name || (plugin as { name?: string })?.name)) ){
       throw 'plugin.name is undefined'
     }
     ctx.plugins.set(pluginContext.name, pluginContext)
